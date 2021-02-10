@@ -1,0 +1,32 @@
+{
+  "name": "MyTSProject",
+  "version": "0.0.1",
+  "private": true,
+  "main": "./html/Web.bundle/script.js",
+  "scripts": {
+    "start": "react-native start",
+    "web": "parcel index.html",
+    "ios": "npm run build && npx react-native run-ios",
+    "android": "npm run build && npx react-native run-android",
+    "build": "parcel build script.ts && cp dist/script.js html/Web.bundle/script.js",
+    "fmt": ""
+  },
+  "dependencies": {
+    "lepont": "^0.11.0",
+    "react": "16.8.6",
+    "react-native": "0.60.5",
+    "react-native-webview": "^8.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.0",
+    "@babel/runtime": "^7.5.0",
+    "@types/react": "^16.9.2",
+    "@types/react-native": "^0.60.14",
+    "@types/react-test-renderer": "^16.9.0",
+    "metro-react-native-babel-preset": "0.54.1",
+    "parcel-bundler": "^1.12.4",
+    "pod-install": "^0.1.10",
+    "prettier": "^2.1.1",
+    "typescript": "^3.6.3"
+  }
+}
